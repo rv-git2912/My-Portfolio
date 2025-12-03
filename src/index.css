@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+/* Basic custom fonts/colors */
+:root{
+  --bg:#050612;
+  --card:#0b1220;
+}
+
+/* Starry background using repeating radial gradients */
+body {
+  background-color: #060712;
+  color: #d1d5db;
+  background-image:
+    radial-gradient(2px 2px at 10% 20%, rgba(255,255,255,0.06), transparent),
+    radial-gradient(1.6px 1.6px at 70% 40%, rgba(255,255,255,0.04), transparent),
+    radial-gradient(1.2px 1.2px at 50% 80%, rgba(255,255,255,0.03), transparent);
+  background-repeat: repeat;
+  background-size: 1200px 800px;
+}
+
+/* Animated slight floating for hero image ring */
+@keyframes floaty {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+/* circle ring */
+.hero-ring {
+  box-shadow: 0 0 0 8px rgba(59,130,246,0.03), 0 0 0 16px rgba(59,130,246,0.02);
+}
+
+/* small decorative dotted circle */
+.dotted-circle {
+  border: 4px dashed rgba(79,70,229,0.12);
+  border-radius: 9999px;
+}
+
+/* floating chat bubble */
+.chat-float {
+  width:64px;height:64px;border-radius:9999px;
+  background-image: linear-gradient(135deg,#2b6cff,#6b8bff);
+}
+
+/* vertical social icons column */
+.vert-social {
+  position: fixed;
+  right: 28px;
+  top: 40%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+
