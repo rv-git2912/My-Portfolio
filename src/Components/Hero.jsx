@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import Typewriter from "typewriter-effect";
-import mine from './Assets/mine.png'
+import mine from "./Assets/mine.png";
+
 const Hero = () => {
   return (
     <motion.section
@@ -10,20 +11,19 @@ const Hero = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-
       {/* LEFT — Text Content */}
       <div className="max-w-xl text-center md:text-left">
         <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mb-4">
-          Hi, I'm <span className="text-green-400">Reet Vishwakarma</span>
+          Hi, I’m <span className="text-green-400">Reet Vishwakarma</span>
         </h1>
 
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-300 mb-6">
           <Typewriter
             options={{
               strings: [
-                "Frontend Developer",
-                "React.js Specialist",
-                "Animation Lover",
+                "Full Stack Developer (MERN)",
+                "React & Node.js Developer",
+                "Building Scalable Web Apps",
               ],
               autoStart: true,
               loop: true,
@@ -32,8 +32,11 @@ const Hero = () => {
         </h2>
 
         <p className="text-gray-400 text-lg mb-8 leading-relaxed">
-          I build clean, modern and interactive user interfaces using
-          React, Tailwind CSS & Framer Motion.
+          I build scalable, modern web applications using{" "}
+          <span className="text-green-400 font-medium">
+            React, Node.js, Express.js, and MongoDB
+          </span>
+          , focusing on clean UI, efficient APIs, and smooth user experiences.
         </p>
 
         {/* Buttons */}
@@ -65,13 +68,25 @@ const Hero = () => {
 
         {/* Social Icons */}
         <div className="flex gap-5 mt-8 justify-center md:justify-start">
-          <a href="https://www.linkedin.com/in/reet-vishwakarma-5a941720a" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
-              className="w-8 h-8 hover:scale-110 transition" />
+          <a
+            href="https://www.linkedin.com/in/reet-vishwakarma-5a941720a"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+              className="w-8 h-8 hover:scale-110 transition"
+            />
           </a>
-          <a href="https://github.com" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
-              className="w-8 h-8 hover:scale-110 transition invert" />
+          <a
+            href="https://github.com/rv-git2912"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+              className="w-8 h-8 hover:scale-110 transition invert"
+            />
           </a>
         </div>
       </div>
@@ -86,14 +101,16 @@ const Hero = () => {
             shadow-2xl
           "
         >
-
           {/* Animated Border */}
-          <div className="absolute inset-0 rounded-3xl bg-gradient-to-br
-            from-green-400/20 via-transparent to-green-700/30"></div>
+          <div
+            className="absolute inset-0 rounded-3xl bg-gradient-to-br
+            from-green-400/20 via-transparent to-green-700/30"
+          ></div>
 
           {/* Your Image */}
           <img
-            src={mine}   // <<REPLACE THIS WITH YOUR IMAGE
+            src={mine}
+            alt="Reet Vishwakarma"
             className="w-full h-full object-cover rounded-3xl"
           />
         </motion.div>

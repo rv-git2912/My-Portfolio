@@ -5,10 +5,16 @@ const About = () => {
   const tech = [
     "React",
     "JavaScript",
-    "Tailwind CSS",
     "Redux",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Mongoose",
+    "HTML",
+    "CSS",
     "Python",
-     "Git",
+    "Django",
+    "Git",
   ];
 
   return (
@@ -36,28 +42,35 @@ const About = () => {
             "
           >
             {/* <img
-              // src="/your-photo.jpg"   //<<<< REPLACE with your actual photo
+              src="/your-photo.jpg"
               alt="Reet Vishwakarma"
               className="w-32 h-32 rounded-full object-cover border-4 border-green-400"
             /> */}
             <h3 className="text-xl font-bold mt-4">Reet Vishwakarma</h3>
-            <p className="text-green-400 font-medium">Frontend Developer</p>
+            <p className="text-green-400 font-medium">
+              Full Stack Developer (MERN)
+            </p>
           </motion.div>
         </Tilt>
 
         {/* RIGHT — Bio */}
         <div className="flex-1">
           <p className="text-gray-300 leading-7 text-lg mb-6">
-            Hi! I’m <span className="text-green-400 font-semibold">Reet Vishwakarma</span>,
-            a passionate Frontend Developer who builds modern, clean and
-            interactive web apps using React, Tailwindcss.
-            I love crafting beautiful UI, smooth animations, and seamless user
-            experiences.
+            Hi, I’m{" "}
+            <span className="text-green-400 font-semibold">
+              Reet Vishwakarma
+            </span>
+            , a Full Stack Developer (MERN) with 1+ year of hands-on experience
+            building scalable, responsive web applications using React, Node.js,
+            Express.js, and MongoDB.
           </p>
 
           <p className="text-gray-300 leading-7 text-lg mb-10">
-            I enjoy turning ideas into real, functioning products —
-            especially dashboards, portfolios, ecommerce stores and modern SaaS UI.
+            I specialize in building RESTful APIs, integrating frontend systems
+            with backend services, managing application state using Redux, and
+            optimizing performance for smooth user experiences. I also have
+            backend exposure with Python and Django from previous professional
+            experience.
           </p>
 
           {/* Tech Stack */}
